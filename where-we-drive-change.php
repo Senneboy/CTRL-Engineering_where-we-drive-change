@@ -37,7 +37,7 @@ $industries = [
         "id" => "section-2",
         "label" => "AUTOMOTIVE",
         "intro" => "Automotive is the breeding nest for our game changing team. CTRL has built up ground-breaking expertise working with major OEMs and suppliers in Formula 1, motorsports and off-highway. Our gained insights in simulation and testing workflows keep us ahead of competitors and deliver client solutions beyond expectations.",
-        "introVideo" => "automotive.mp4",
+        "introVideo" => "Testvideo.mp4",
         "cards" => [
             [
                 "title" => "Driving Innovation with Test Benches",
@@ -69,7 +69,7 @@ $industries = [
         "id" => "section-3",
         "label" => "FOOD & BEVERAGE",
         "intro" => "At CTRL Engineering, we specialize in the food and beverage industry, delivering solutions that enhance efficiency, product quality, and safety compliance. We focus on automation, traceability, and hygiene, and offer smart dosing systems and retrofit solutions to modernize existing equipment.",
-        "introVideo" => "food-beverage.mp4",
+        "introVideo" => "Testvideo.mp4",
         "cards" => [
             [
                 "title" => "Smart Software for Consistent Quality",
@@ -113,17 +113,14 @@ $industries = [
                     </video>
                 </div>
 
-                <?php foreach ($industry['cards'] as $card): ?>
-                    <article class="content-row <?php echo !empty($card['reverse']) ? 'reverse' : ''; ?>">
-                        <div class="text-card <?php echo !empty($card['reverse']) ? 'offset' : ''; ?>">
+                <div class="cards-grid">
+                    <?php foreach ($industry['cards'] as $card): ?>
+                        <article class="card-item">
                             <h3><?php echo $card['title']; ?></h3>
-                            <div class="text-body"><?php echo $card['text']; ?></div>
-                        </div>
-                        <div class="media-card">
-                            <img src="<?php echo $card['image']; ?>" alt="<?php echo $card['title']; ?>">
-                        </div>
-                    </article>
-                <?php endforeach; ?>
+                            <div class="card-text"><?php echo $card['text']; ?></div>
+                        </article>
+                    <?php endforeach; ?>
+                </div>
             </section>
         <?php endforeach; ?>
     </main>
