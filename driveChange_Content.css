@@ -63,6 +63,31 @@ body {
   line-height: 1.75rem;
 }
 
+.industry-intro-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.industry-intro {
+  flex: 1;
+  margin: 0;
+}
+
+.industry-intro-video {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+  box-shadow: 5px 13px 9px rgba(0, 0, 0, 0.4);
+  display: block;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
 .content-row {
   display: flex;
   justify-content: space-between;
@@ -229,6 +254,20 @@ body {
     margin-top: 24px;
     font-size: 20px;
     line-height: 1.45;
+  }
+
+  .industry-intro-container {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 24px;
+  }
+
+  .industry-intro {
+    margin: 0;
+  }
+
+  .industry-intro-video {
+    max-height: 250px;
   }
 
   .content-row {
