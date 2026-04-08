@@ -45,13 +45,13 @@ body {
   z-index: 1;
 }
 
-.industry-section h2::before {
+.industry-section h2::before { /*Title hexagon SVG*/
   content: "";
   position: absolute;
   inset: 0;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 120' preserveAspectRatio='none'%3E%3Cpolygon points='34,4 966,4 996,60 966,116 34,116 4,60' fill='none' stroke='%23ece318' stroke-width='8' stroke-linejoin='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 120' preserveAspectRatio='none'%3E%3Cpolygon points='34,4 966,4 996,60 966,116 34,116 4,60' fill='none' stroke='%23000000' stroke-width='8' stroke-linejoin='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
   z-index: -1;
 }
 
@@ -65,24 +65,59 @@ body {
 
 .industry-intro-container {
   display: flex;
+  flex-direction: row-reverse;
   gap: 40px;
-  align-items: center;
+  align-items: flex-end;
   margin-top: 50px;
+  overflow: visible;
+  min-width: 0;
 }
 
 .industry-intro {
-  flex: 1;
+  flex: 0 0 360px;
+  width: 360px;
   margin: 0;
+  padding: 20px;
+  font-size: 22px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  text-align: center;
+
+  border-right: 4px solid #ece318;
+  border-bottom: 4px solid #ece318;
+  background-color: #040404;
+  color: #fff;
+  border-radius: 15px;
+
+  transition: all 0.1s ease;
+
+  position: relative;
+  z-index: 2;
+}
+
+.industry-intro:hover {
+  color: #ece318;
+  border-right: 6.5px solid #ece318;
+  border-bottom: 6.5px solid #ece318;
+
 }
 
 .industry-intro-video {
-  flex: 1;
-  width: 100%;
+  flex: 1 1 auto;
+  width: auto;
+  min-width: 0;
+  max-width: 100%;
+
   height: auto;
-  max-height: 400px;
+  max-height: 600px;
   border-radius: 5px;
   object-fit: cover;
-  box-shadow: 5px 13px 9px rgba(0, 0, 0, 0.4);
+  margin-top: 40px;
+  margin-left: 35px;
+  margin-bottom: 80px;
+  
+  transform: none;
+
   display: block;
   pointer-events: none;
   cursor: not-allowed;
@@ -217,17 +252,22 @@ body {
   }
 
   .industry-intro-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 20px;
     margin-top: 24px;
   }
 
   .industry-intro {
     margin: 0;
+    width: 100%;
+    flex: 0 1 auto;
   }
 
   .industry-intro-video {
+    width: 100%;
+    flex: 0 1 auto;
     max-height: 350px;
+    transform: none;
   }
 
   .cards-grid {
