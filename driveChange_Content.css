@@ -40,7 +40,7 @@ body {
   background: var(--container-color);
   margin-bottom: 56px;
   padding: 72px 78px;
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
   scroll-margin-top: 28px;
 }
@@ -97,14 +97,14 @@ body {
   margin: 0;
   padding: 20px;
   font-size: 20px;
+  font-weight: 500;
   margin-top: 0;
   margin-bottom: 40px;
   text-align: center;
 
-  border-right: 4px solid #ece318;
-  border-bottom: 4px solid #ece318;
-  background-color: #040404;
-  color: #fff;
+
+  background-color: #ece318;
+  color: #040404;
   border-radius: 15px;
 
   transition: all 0.1s ease;
@@ -122,16 +122,17 @@ body {
 
 .industry-intro-video {
   flex: 0 1 auto;
-  width: 100%;
+  width: 110%;
   min-width: 0;
-  max-width: 100%;
+  max-width: 110%;
 
   height: auto;
   max-height: 600px;
   border-radius: 5px;
   object-fit: cover;
+  margin-left: -5%;
   margin-top: 20px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   
   transform: none;
 
