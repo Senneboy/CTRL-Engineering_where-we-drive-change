@@ -104,7 +104,7 @@ body {
 
 
   background-color: #ece318;
-  color: #040404;
+  color: #000;
   border-radius: 15px;
 
   transition: all 0.1s ease;
@@ -113,12 +113,6 @@ body {
   z-index: 2;
 }
 
-.industry-intro:hover {
-  color: #ece318;
-  border-right: 6.5px solid #ece318;
-  border-bottom: 6.5px solid #ece318;
-
-}
 
 .industry-intro-video {
   flex: 0 1 auto;
