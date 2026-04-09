@@ -22,7 +22,7 @@ body {
   url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-80 -80 1360 1200'%3E%3Cpolygon points='300,1 900,1 1200,520 900,1039 300,1039 0,520' fill='none' stroke='%23ece318' stroke-opacity='0.86' stroke-width='57'/%3E%3C/svg%3E");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: 1400px 1200px, 1550px 1350px, 1250px 1100px, 1500px 1280px;
-  background-position: -800px 5%, 50vw 35%, -700px 115%, 60vw 80%;
+  background-position: -900px 5%, 50vw 35%, -700px 115%, 60vw 80%;
   overflow-x: hidden;
 }
 
@@ -72,7 +72,7 @@ body {
 
 .industry-intro-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /*Stack vertically*/
   gap: 24px;
   align-items: stretch;
   margin-top: 50px;
