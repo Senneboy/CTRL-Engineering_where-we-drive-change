@@ -158,12 +158,6 @@ body {
   color: #000;
 }
 
-.custom-highlight {
-  display: inline;
-  background-color: #ece318;
-  padding: 0;
-}
-
 .card-item h3::before {
   content: "";
   position: absolute;
@@ -206,15 +200,6 @@ body {
 .media-card {
   display: none;
 }
-
-.subtitle-highlight {
-	display: inline;
-	padding: 0 0.18em;
-	background-color: #ece318;
-	box-decoration-break: clone;
-	-webkit-box-decoration-break: clone;
-}
-
 
 .custom-highlight {
 	display: inline;
