@@ -104,8 +104,6 @@ body {
   color: #000;
   border-radius: 15px;
   border: 2px solid #000;
-  border-right: 6px solid #000;
-  border-bottom: 6px solid #000;
   transition: all 0.1s ease;
 
   position: relative;
@@ -156,9 +154,14 @@ body {
   position: relative;
   padding-left: 52px;
   min-height: 34px;
-  display: flex;
-  align-items: center;
+  display: block;
   color: #000;
+}
+
+.custom-highlight {
+  display: inline;
+  background-color: #ece318;
+  padding: 0;
 }
 
 .card-item h3::before {
@@ -204,6 +207,22 @@ body {
   display: none;
 }
 
+.subtitle-highlight {
+	display: inline;
+	padding: 0 0.18em;
+	background-color: #ece318;
+	box-decoration-break: clone;
+	-webkit-box-decoration-break: clone;
+}
+
+
+.custom-highlight {
+	display: inline;
+	background-color: #ece318;
+	padding: 0 15px;
+	box-decoration-break: clone;
+	-webkit-box-decoration-break: clone;
+}
 @media (max-width: 1920px) {
   .cards-grid {
     gap: 35px;

@@ -5,7 +5,7 @@ $industries = [
         "id" => "section-1",
         "label" => "PRODUCTION TECHNOLOGY",
         "intro" => "CTRL Engineering delivers production technology that improves efficiency, precision, and automation. Our systems are built to streamline key industrial processes.",
-        "introVideo" => "Production-Tech.mp4",
+        "introVideo" => "Testvideo.mp4",
         "cards" => [
             [
                 "title" => "Turnkey Machine Solutions",
@@ -116,7 +116,7 @@ $industries = [
                 <div class="cards-grid">
                     <?php foreach ($industry['cards'] as $card): ?>
                         <article class="card-item">
-                            <h3><?php echo $card['title']; ?></h3>
+                            <h3><span class="custom-highlight"><?php echo htmlspecialchars($card['title']); ?></span></h3>
                             <div class="card-text"><?php echo $card['text']; ?></div>
                         </article>
                     <?php endforeach; ?>
