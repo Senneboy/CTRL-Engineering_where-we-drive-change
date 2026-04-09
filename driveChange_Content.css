@@ -35,7 +35,7 @@ body {
 
 .industry-section {
   background: var(--container-color);
-  margin-bottom: 56px;
+  margin-bottom: 150px;
   padding: 72px 78px;
   border-radius: 15px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
@@ -68,14 +68,6 @@ body {
   background-size: 100% 100%;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 120' preserveAspectRatio='none'%3E%3Cpolygon points='34,4 966,4 996,60 966,116 34,116 4,60' fill='none' stroke='%23000000' stroke-width='8' stroke-linejoin='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
   z-index: -1;
-}
-
-.industry-intro {
-  margin: 50px 0 0;
-  font-size: 20px;
-  color: #000;
-  font-weight: unset;
-  line-height: 1.75rem;
 }
 
 .industry-intro-container {
@@ -224,6 +216,7 @@ body {
   }
 
   .industry-section {
+    margin-bottom: 90px;
     padding: 60px 56px;
   }
 
@@ -339,6 +332,7 @@ body {
   }
 
   .industry-section {
+    margin-bottom: 22px;
     padding: 34px 18px;
   }
 
